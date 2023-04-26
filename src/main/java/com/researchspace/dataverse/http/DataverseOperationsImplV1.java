@@ -50,7 +50,6 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.researchspace.dataverse.api.v1.DatasetOperations;
 import com.researchspace.dataverse.api.v1.DataverseOperations;
-import com.researchspace.dataverse.api.v1.InfoOperations;
 import com.researchspace.dataverse.api.v1.MetadataOperations;
 import com.researchspace.dataverse.api.v1.UsersOperations;
 import com.researchspace.dataverse.entities.Dataset;
@@ -78,7 +77,7 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Slf4j
 public class DataverseOperationsImplV1 extends AbstractOpsImplV1
-implements DatasetOperations, MetadataOperations, InfoOperations,
+implements DatasetOperations, MetadataOperations,
 DataverseOperations, UsersOperations {
 
     /* (non-Javadoc)
@@ -396,31 +395,6 @@ DataverseOperations, UsersOperations {
         handleError(resp);
         return resp.getBody();
     }
-
-    @Override
-    public DvMessage getDatasetPublishPopupCustomText() {
-        final String url = createAdminUrl("info", "settings", ":DatasetPublishPopupCustomText");
-        final HttpEntity<String> entity = createHttpEntity("");
-        final ParameterizedTypeReference<DataverseResponse<DvMessage>> type = new ParameterizedTypeReference<DataverseResponse<DvMessage>>() {
-        };
-        final ResponseEntity<DataverseResponse<DvMessage>> resp = template.exchange(url, HttpMethod.GET, entity, type);
-        log.debug(resp.getBody().toString());
-        return resp.getBody().getData();
-
-    }
-
-    @Override
-    public DataverseResponse<Object> setDatasetPublishPopupCustomText(final String text) {
-        final String url = createAdminUrl("admin", "settings", ":DatasetPublishPopupCustomText");
-        final HttpEntity<String> entity = createHttpEntity(text);
-        final ParameterizedTypeReference<DataverseResponse<Object>> type = new ParameterizedTypeReference<DataverseResponse<Object>>() {
-        };
-        final ResponseEntity<DataverseResponse<Object>> resp = template.exchange(url, HttpMethod.PUT, entity, type);
-        log.debug(resp.getBody().toString());
-        return resp.getBody();
-    }
-
-
 
     @Override
     public void deleteFile(final String fileId) throws SWORDException {

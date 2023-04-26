@@ -242,8 +242,8 @@
         }, {
           "typeName" : "productionPlace",
           "typeClass" : "primitive",
-          "multiple" : true,
-          "value" : [ "Edinburgh, UK" ]
+          "multiple" : false,
+          "value" : "Edinburgh, UK"
         }, {
           "typeName" : "contributor",
           "typeClass" : "compound",
@@ -345,7 +345,7 @@
           "value" : "http://www.myrepo.com"
         }, {
           "typeName" : "kindOfData",
-          "typeClass" : "primitive",
+          "typeClass" : "controlledVocabulary",
           "multiple" : true,
           "value" : [ "Dataset", "Collection" ]
         }, {

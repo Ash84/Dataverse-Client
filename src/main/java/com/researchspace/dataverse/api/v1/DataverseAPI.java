@@ -49,12 +49,6 @@ public interface DataverseAPI {
     void configure(DataverseConfig config);
 
     /**
-     * Get class for performing Info Operations.
-     * @return InfoOperations
-     */
-    InfoOperations getInfoOperations();
-
-    /**
      * Get class for performing Search Operations.
      * @return SearchOperations
      */

@@ -52,9 +52,9 @@ public class DatasetFacade   {
     private String note;
     private List<String> languages;
     private Date productionDate;
-    private @Singular("productionPlace") List<String> productionPlaces;
+    private String productionPlace;
     private @Singular List<DatasetContributor> contributors;
-    private @Singular("kindOfData") List<String> kindsOfData;
+    private @Singular("kindOfData") List<DatasetKindOfData> kindsOfData;
     private @Singular("timePeriodCovered") List<DatasetTimePeriodCovered> timePeriodsCovered;
 
     // Geospatial metadata
@@ -65,7 +65,7 @@ public class DatasetFacade   {
      * @return
      */
     public Date getProductionDate () {
-        if(productionDate != null){
+        if (productionDate != null){
             return new Date(productionDate.getTime());
         } else {
             return null;
