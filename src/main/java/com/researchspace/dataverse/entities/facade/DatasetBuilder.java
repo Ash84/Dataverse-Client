@@ -32,6 +32,7 @@ import com.researchspace.dataverse.entities.Dataset;
 import com.researchspace.dataverse.entities.DatasetMetadataBlock;
 import com.researchspace.dataverse.entities.DatasetVersion;
 import com.researchspace.dataverse.entities.Field;
+import com.researchspace.dataverse.entities.MetadataLanguage;
 
 /**
  * Converts POJO Java facade into underlying JSON object representation
@@ -80,13 +81,21 @@ public class DatasetBuilder {
     private static final String GEOGRAPHIC_BOUNDING_BOX = "geographicBoundingBox";
 
     public Dataset build(final DatasetFacade facade) {
+        Dataset dataset;
         final Map<String, DatasetMetadataBlock> metadataBlocks = new HashMap<>();
         metadataBlocks.put("citation", new DatasetMetadataBlock("Citation Metadata", createCitationFields(facade)));
         metadataBlocks.put("geospatial", new DatasetMetadataBlock("Geospatial Metadata", createFields(facade)));
         if (facade.getTermsOfUse() != null) {
-            return build(metadataBlocks, facade.getTermsOfUse());
+            dataset = build(metadataBlocks, facade.getTermsOfUse());
+        } else {
+            dataset = build(metadataBlocks);
         }
-        return build(metadataBlocks);
+        if (facade.getMetadataLanguage() == null) {
+            dataset.setMetadataLanguage(MetadataLanguage.ENGLISH.getTag());
+        } else {
+            dataset.setMetadataLanguage(facade.getMetadataLanguage().getTag());
+        }
+        return dataset;
     }
 
     public Dataset build(final Map<String, DatasetMetadataBlock> metadataBlocks) {

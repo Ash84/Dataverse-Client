@@ -18,7 +18,6 @@ package com.researchspace.dataverse.http;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.stream.Collectors;
 
 import org.apache.commons.lang.StringUtils;
@@ -121,7 +120,6 @@ public abstract class AbstractOpsImplV1 {
     HttpHeaders addAPIKeyToHeader() {
         final HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
-        headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
         addApiKey(headers);
         return headers;
     }

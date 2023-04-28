@@ -1,216 +1,447 @@
 {
-  "datasetVersion": {
-    "license": "CC0 1.0",
-    "termsOfUse": "CC0 Waiver",
-    "metadataBlocks": {
-      "citation": {
-        "displayName": "Citation Metadata",
-        "fields": [
+  "metadataLanguage": "en",
+  "datasetVersion":{
+    "license": "etalab 2.0",
+    "metadataBlocks":{
+      "citation":{
+        "fields":[
           {
-            "typeName": "title",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "Replication Data for: Title"
+            "typeName":"title",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"title"
           },
           {
-            "typeName": "subtitle",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "Subtitle"
+            "typeName":"subtitle",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"subtitle"
           },
           {
-            "typeName": "alternativeTitle",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "Alternative Title"
+            "typeName":"alternativeTitle",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"alternativeTitle"
           },
           {
-            "typeName": "alternativeURL",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "http://AlternativeURL.org"
+            "typeName":"alternativeURL",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"http://link.to.data"
           },
           {
-            "typeName": "otherId",
-            "multiple": true,
-            "typeClass": "compound",
-            "value": [
+            "typeName":"otherId",
+            "multiple":true,
+            "typeClass":"compound",
+            "value":[
               {
-                "otherIdAgency": {
-                  "typeName": "otherIdAgency",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "OtherIDAgency1"
+                "otherIdAgency":{
+                  "typeName":"otherIdAgency",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"otherIdAgency1"
                 },
-                "otherIdValue": {
-                  "typeName": "otherIdValue",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "OtherIDIdentifier1"
+                "otherIdValue":{
+                  "typeName":"otherIdValue",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"otherIdAgencyIdentifier2"
                 }
               },
               {
-                "otherIdAgency": {
-                  "typeName": "otherIdAgency",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "OtherIDAgency2"
+                "otherIdAgency":{
+                  "typeName":"otherIdAgency",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"otherIdAgency2"
                 },
-                "otherIdValue": {
-                  "typeName": "otherIdValue",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "OtherIDIdentifier2"
+                "otherIdValue":{
+                  "typeName":"otherIdValue",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"otherIdAgencyIdentifier2"
                 }
               }
             ]
           },
           {
-            "typeName": "author",
-            "multiple": true,
-            "typeClass": "compound",
-            "value": [
+            "typeName":"datasetContact",
+            "multiple":true,
+            "typeClass":"compound",
+            "value":[
               {
-                "authorName": {
-                  "typeName": "authorName",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "LastAuthor1, FirstAuthor1"
+                "datasetContactName":{
+                  "typeName":"datasetContactName",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"contactName1"
                 },
-                "authorAffiliation": {
-                  "typeName": "authorAffiliation",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "AuthorAffiliation1"
+                "datasetContactAffiliation":{
+                  "typeName":"datasetContactAffiliation",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"contactAffiliation1"
                 },
-                "authorIdentifierScheme": {
-                  "typeName": "authorIdentifierScheme",
-                  "multiple": false,
-                  "typeClass": "controlledVocabulary",
-                  "value": "ORCID"
-                },
-                "authorIdentifier": {
-                  "typeName": "authorIdentifier",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "AuthorIdentifier1"
+                "datasetContactEmail":{
+                  "typeName":"datasetContactEmail",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"contact1@mail.com"
                 }
               },
               {
-                "authorName": {
-                  "typeName": "authorName",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "LastAuthor2, FirstAuthor2"
+                "datasetContactName":{
+                  "typeName":"datasetContactName",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"contactName2"
                 },
-                "authorAffiliation": {
-                  "typeName": "authorAffiliation",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "AuthorAffiliation2"
+                "datasetContactAffiliation":{
+                  "typeName":"datasetContactAffiliation",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"contactAffiliation2"
                 },
-                "authorIdentifierScheme": {
-                  "typeName": "authorIdentifierScheme",
-                  "multiple": false,
-                  "typeClass": "controlledVocabulary",
-                  "value": "ISNI"
-                },
-                "authorIdentifier": {
-                  "typeName": "authorIdentifier",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "AuthorIdentifier2"
+                "datasetContactEmail":{
+                  "typeName":"datasetContactEmail",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"contact2@mail.com"
                 }
               }
             ]
           },
           {
-            "typeName": "datasetContact",
-            "multiple": true,
-            "typeClass": "compound",
-            "value": [
+            "typeName":"author",
+            "multiple":true,
+            "typeClass":"compound",
+            "value":[
               {
-                "datasetContactName": {
-                  "typeName": "datasetContactName",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "LastContact1, FirstContact1"
+                "authorName":{
+                  "typeName":"authorName",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"authorName1"
                 },
-                "datasetContactAffiliation": {
-                  "typeName": "datasetContactAffiliation",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "ContactAffiliation1"
+                "authorAffiliation":{
+                  "typeName":"authorAffiliation",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"authorAffiliation1"
                 },
-                "datasetContactEmail": {
-                  "typeName": "datasetContactEmail",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "ContactEmail1@mailinator.com"
+                "authorIdentifierScheme":{
+                  "typeName":"authorIdentifierScheme",
+                  "multiple":false,
+                  "typeClass":"controlledVocabulary",
+                  "value":"ORCID"
+                },
+                "authorIdentifier":{
+                  "typeName":"authorIdentifier",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"authorIdentifier1"
                 }
               },
               {
-                "datasetContactName": {
-                  "typeName": "datasetContactName",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "LastContact2, FirstContact2"
+                "authorName":{
+                  "typeName":"authorName",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"authorName2"
                 },
-                "datasetContactAffiliation": {
-                  "typeName": "datasetContactAffiliation",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "ContactAffiliation2"
+                "authorAffiliation":{
+                  "typeName":"authorAffiliation",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"authorAffiliation2"
                 },
-                "datasetContactEmail": {
-                  "typeName": "datasetContactEmail",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "ContactEmail2@mailinator.com"
+                "authorIdentifierScheme":{
+                  "typeName":"authorIdentifierScheme",
+                  "multiple":false,
+                  "typeClass":"controlledVocabulary",
+                  "value":"DOI"
+                },
+                "authorIdentifier":{
+                  "typeName":"authorIdentifier",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"authorIdentifier2"
                 }
               }
             ]
           },
           {
-            "typeName": "dsDescription",
-            "multiple": true,
-            "typeClass": "compound",
-            "value": [
+            "typeName":"contributor",
+            "multiple":true,
+            "typeClass":"compound",
+            "value":[
               {
-                "dsDescriptionValue": {
-                  "typeName": "dsDescriptionValue",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "DescriptionText1"
+                "contributorType":{
+                  "typeName":"contributorType",
+                  "multiple":false,
+                  "typeClass":"controlledVocabulary",
+                  "value":"Data Collector"
                 },
-                "dsDescriptionDate": {
-                  "typeName": "dsDescriptionDate",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "1000-01-01"
+                "contributorName":{
+                  "typeName":"contributorName",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"contributorName1"
+                },
+                "contributorAffiliation":{
+                  "typeName":"contributorAffiliation",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"contributorAffiliation1"
+                },
+                "contributorIdentifierScheme":{
+                  "typeName":"contributorIdentifierScheme",
+                  "multiple":false,
+                  "typeClass":"controlledVocabulary",
+                  "value":"info"
+                },
+                "contributorIdentifier":{
+                  "typeName":"contributorIdentifier",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"contributorIdentifier1"
                 }
               },
               {
-                "dsDescriptionValue": {
-                  "typeName": "dsDescriptionValue",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "DescriptionText2"
+                "contributorType":{
+                  "typeName":"contributorType",
+                  "multiple":false,
+                  "typeClass":"controlledVocabulary",
+                  "value":"Editor"
                 },
-                "dsDescriptionDate": {
-                  "typeName": "dsDescriptionDate",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "1000-02-02"
+                "contributorName":{
+                  "typeName":"contributorName",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"contributorName2"
+                },
+                "contributorAffiliation":{
+                  "typeName":"contributorAffiliation",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"contributorAffiliation2"
+                },
+                "contributorIdentifierScheme":{
+                  "typeName":"contributorIdentifierScheme",
+                  "multiple":false,
+                  "typeClass":"controlledVocabulary",
+                  "value":"info"
+                },
+                "contributorIdentifier":{
+                  "typeName":"contributorIdentifier",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"contributorIdentifier2"
                 }
               }
             ]
           },
           {
-            "typeName": "subject",
-            "multiple": true,
-            "typeClass": "controlledVocabulary",
-            "value": [
+            "typeName":"producer",
+            "multiple":true,
+            "typeClass":"compound",
+            "value":[
+              {
+                "producerName":{
+                  "typeName":"producerName",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"producerName1"
+                },
+                "producerAffiliation":{
+                  "typeName":"producerAffiliation",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"producerAffiliation1"
+                },
+                "producerAbbreviation":{
+                  "typeName":"producerAbbreviation",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"producerAbbreviation1"
+                },
+                "producerURL":{
+                  "typeName":"producerURL",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"http://producer.url1.com"
+                },
+                "producerLogoURL":{
+                  "typeName":"producerLogoURL",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"http://producer.logo1.com"
+                }
+              },
+              {
+                "producerName":{
+                  "typeName":"producerName",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"producerName2"
+                },
+                "producerAffiliation":{
+                  "typeName":"producerAffiliation",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"producerAffiliation2"
+                },
+                "producerAbbreviation":{
+                  "typeName":"producerAbbreviation",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"producerAbbreviation2"
+                },
+                "producerURL":{
+                  "typeName":"producerURL",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"http://producer.url2.com"
+                },
+                "producerLogoURL":{
+                  "typeName":"producerLogoURL",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"http://producer.logo2.com"
+                }
+              }
+            ]
+          },
+          {
+            "typeName":"productionDate",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"2000-01-01"
+          },
+          {
+            "typeName":"productionPlace",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"productionPlace"
+          },
+          {
+            "typeName":"distributor",
+            "multiple":true,
+            "typeClass":"compound",
+            "value":[
+              {
+                "distributorName":{
+                  "typeName":"distributorName",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"distributorName1"
+                },
+                "distributorAffiliation":{
+                  "typeName":"distributorAffiliation",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"distributorAffiliation1"
+                },
+                "distributorAbbreviation":{
+                  "typeName":"distributorAbbreviation",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"distributorAbbreviation1"
+                },
+                "distributorURL":{
+                  "typeName":"distributorURL",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"http://distributor.url1.com"
+                },
+                "distributorLogoURL":{
+                  "typeName":"distributorLogoURL",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"http://distributor.logo2.com"
+                }
+              },
+              {
+                "distributorName":{
+                  "typeName":"distributorName",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"distributorName2"
+                },
+                "distributorAffiliation":{
+                  "typeName":"distributorAffiliation",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"distributorAffiliation2"
+                },
+                "distributorAbbreviation":{
+                  "typeName":"distributorAbbreviation",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"distributorAbbreviation2"
+                },
+                "distributorURL":{
+                  "typeName":"distributorURL",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"http://distributor.url2.com"
+                },
+                "distributorLogoURL":{
+                  "typeName":"distributorLogoURL",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"http://distributor.logo2.com"
+                }
+              }
+            ]
+          },
+          {
+            "typeName":"distributionDate",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"2000-01-01"
+          },
+          {
+            "typeName":"dsDescription",
+            "multiple":true,
+            "typeClass":"compound",
+            "value":[
+              {
+                "dsDescriptionValue":{
+                  "typeName":"dsDescriptionValue",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"descriptionText"
+                },
+                "dsDescriptionLanguage":{
+                  "typeName":"dsDescriptionLanguage",
+                  "multiple":false,
+                  "typeClass":"controlledVocabulary",
+                  "value":"English"
+                },
+                "dsDescriptionDate":{
+                  "typeName":"dsDescriptionDate",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"2000-01-01"
+                }
+              }
+            ]
+          },
+          {
+            "typeName":"language",
+            "multiple":true,
+            "typeClass":"controlledVocabulary",
+            "value":[
+              "Abkhaz",
+              "Afar"
+            ]
+          },
+          {
+            "typeName":"subject",
+            "multiple":true,
+            "typeClass":"controlledVocabulary",
+            "value":[
               "Agricultural Sciences",
               "Business and Management",
               "Engineering",
@@ -218,906 +449,1287 @@
             ]
           },
           {
-            "typeName": "keyword",
-            "multiple": true,
-            "typeClass": "compound",
-            "value": [
+            "typeName":"keyword",
+            "multiple":true,
+            "typeClass":"compound",
+            "value":[
               {
-                "keywordValue": {
-                  "typeName": "keywordValue",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "KeywordTerm1"
+                "keywordValue":{
+                  "typeName":"keywordValue",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"keywordTerm1"
                 },
-                "keywordVocabulary": {
-                  "typeName": "keywordVocabulary",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "KeywordVocabulary1"
+                "keywordTermURI":{
+                  "typeName":"keywordTermURL",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"http://keyword.term1.com"
                 },
-                "keywordVocabularyURI": {
-                  "typeName": "keywordVocabularyURI",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "http://KeywordVocabularyURL1.org"
+                "keywordVocabulary":{
+                  "typeName":"keywordVocabulary",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"keywordVocabulary1.com"
+                },
+                "keywordVocabularyURI":{
+                  "typeName":"keywordVocabularyURI",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"http://keyword.vocabulary1.com"
                 }
               },
               {
-                "keywordValue": {
-                  "typeName": "keywordValue",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "KeywordTerm2"
+                "keywordValue":{
+                  "typeName":"keywordValue",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"keywordTerm2"
                 },
-                "keywordVocabulary": {
-                  "typeName": "keywordVocabulary",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "KeywordVocabulary2"
+                "keywordTermURI":{
+                  "typeName":"keywordTermURL",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"http://keyword.term2.com"
                 },
-                "keywordVocabularyURI": {
-                  "typeName": "keywordVocabularyURI",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "http://KeywordVocabularyURL2.org"
+                "keywordVocabulary":{
+                  "typeName":"keywordVocabulary",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"keywordVocabulary2"
+                },
+                "keywordVocabularyURI":{
+                  "typeName":"keywordVocabularyURI",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"http://keyword.vocabulary2.com"
                 }
               }
             ]
           },
           {
-            "typeName": "topicClassification",
-            "multiple": true,
-            "typeClass": "compound",
-            "value": [
+            "typeName":"topicClassification",
+            "multiple":true,
+            "typeClass":"compound",
+            "value":[
               {
-                "topicClassValue": {
-                  "typeName": "topicClassValue",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "Topic Classification Term1"
+                "topicClassValue":{
+                  "typeName":"topicClassValue",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"topicTerm1"
                 },
-                "topicClassVocab": {
-                  "typeName": "topicClassVocab",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "Topic Classification Vocab1"
+                "topicClassVocab":{
+                  "typeName":"topicClassVocab",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"topicVocabulary1"
                 },
-                "topicClassVocabURI": {
-                  "typeName": "topicClassVocabURI",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "https://TopicClassificationURL1.com"
+                "topicClassVocabURI":{
+                  "typeName":"topicClassVocabURI",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"http://topic.vocabulary1.com"
                 }
               },
               {
-                "topicClassValue": {
-                  "typeName": "topicClassValue",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "Topic Classification Term2"
+                "topicClassValue":{
+                  "typeName":"topicClassValue",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"topicTerm2"
                 },
-                "topicClassVocab": {
-                  "typeName": "topicClassVocab",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "Topic Classification Vocab2"
+                "topicClassVocab":{
+                  "typeName":"topicClassVocab",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"topicVocabulary2"
                 },
-                "topicClassVocabURI": {
-                  "typeName": "topicClassVocabURI",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "https://TopicClassificationURL2.com"
+                "topicClassVocabURI":{
+                  "typeName":"topicClassVocabURI",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"http://topic.vocabulary2.com"
                 }
               }
             ]
           },
           {
-            "typeName": "publication",
-            "multiple": true,
-            "typeClass": "compound",
-            "value": [
-              {
-                "publicationCitation": {
-                  "typeName": "publicationCitation",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "RelatedPublicationCitation1"
-                },
-                "publicationIDType": {
-                  "typeName": "publicationIDType",
-                  "multiple": false,
-                  "typeClass": "controlledVocabulary",
-                  "value": "ark"
-                },
-                "publicationIDNumber": {
-                  "typeName": "publicationIDNumber",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "RelatedPublicationIDNumber1"
-                },
-                "publicationURL": {
-                  "typeName": "publicationURL",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "http://RelatedPublicationURL1.org"
-                }
-              },
-              {
-                "publicationCitation": {
-                  "typeName": "publicationCitation",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "RelatedPublicationCitation2"
-                },
-                "publicationIDType": {
-                  "typeName": "publicationIDType",
-                  "multiple": false,
-                  "typeClass": "controlledVocabulary",
-                  "value": "arXiv"
-                },
-                "publicationIDNumber": {
-                  "typeName": "publicationIDNumber",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "RelatedPublicationIDNumber2"
-                },
-                "publicationURL": {
-                  "typeName": "publicationURL",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "http://RelatedPublicationURL2.org"
-                }
-              }
-            ]
-          },
-          {
-            "typeName": "notesText",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "Notes1"
-          },
-          {
-            "typeName": "language",
-            "multiple": true,
-            "typeClass": "controlledVocabulary",
-            "value": [
-              "Abkhaz",
-              "Afar"
-            ]
-          },
-          {
-            "typeName": "producer",
-            "multiple": true,
-            "typeClass": "compound",
-            "value": [
-              {
-                "producerName": {
-                  "typeName": "producerName",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "LastProducer1, FirstProducer1"
-                },
-                "producerAffiliation": {
-                  "typeName": "producerAffiliation",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "ProducerAffiliation1"
-                },
-                "producerAbbreviation": {
-                  "typeName": "producerAbbreviation",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "ProducerAbbreviation1"
-                },
-                "producerURL": {
-                  "typeName": "producerURL",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "http://ProducerURL1.org"
-                },
-                "producerLogoURL": {
-                  "typeName": "producerLogoURL",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "http://ProducerLogoURL1.org"
-                }
-              },
-              {
-                "producerName": {
-                  "typeName": "producerName",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "LastProducer2, FirstProducer2"
-                },
-                "producerAffiliation": {
-                  "typeName": "producerAffiliation",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "ProducerAffiliation2"
-                },
-                "producerAbbreviation": {
-                  "typeName": "producerAbbreviation",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "ProducerAbbreviation2"
-                },
-                "producerURL": {
-                  "typeName": "producerURL",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "http://ProducerURL2.org"
-                },
-                "producerLogoURL": {
-                  "typeName": "producerLogoURL",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "http://ProducerLogoURL2.org"
-                }
-              }
-            ]
-          },
-          {
-            "typeName": "productionDate",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "1003-01-01"
-          },
-          {
-            "typeName": "productionPlace",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "ProductionPlace"
-          },
-          {
-            "typeName": "contributor",
-            "multiple": true,
-            "typeClass": "compound",
-            "value": [
-              {
-                "contributorType": {
-                  "typeName": "contributorType",
-                  "multiple": false,
-                  "typeClass": "controlledVocabulary",
-                  "value": "Data Collector"
-                },
-                "contributorName": {
-                  "typeName": "contributorName",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "LastContributor1, FirstContributor1"
-                }
-              },
-              {
-                "contributorType": {
-                  "typeName": "contributorType",
-                  "multiple": false,
-                  "typeClass": "controlledVocabulary",
-                  "value": "Data Curator"
-                },
-                "contributorName": {
-                  "typeName": "contributorName",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "LastContributor2, FirstContributor2"
-                }
-              }
-            ]
-          },
-          {
-            "typeName": "grantNumber",
-            "multiple": true,
-            "typeClass": "compound",
-            "value": [
-              {
-                "grantNumberAgency": {
-                  "typeName": "grantNumberAgency",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "GrantInformationGrantAgency1"
-                },
-                "grantNumberValue": {
-                  "typeName": "grantNumberValue",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "GrantInformationGrantNumber1"
-                }
-              },
-              {
-                "grantNumberAgency": {
-                  "typeName": "grantNumberAgency",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "GrantInformationGrantAgency2"
-                },
-                "grantNumberValue": {
-                  "typeName": "grantNumberValue",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "GrantInformationGrantNumber2"
-                }
-              }
-            ]
-          },
-          {
-            "typeName": "distributor",
-            "multiple": true,
-            "typeClass": "compound",
-            "value": [
-              {
-                "distributorName": {
-                  "typeName": "distributorName",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "LastDistributor1, FirstDistributor1"
-                },
-                "distributorAffiliation": {
-                  "typeName": "distributorAffiliation",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "DistributorAffiliation1"
-                },
-                "distributorAbbreviation": {
-                  "typeName": "distributorAbbreviation",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "DistributorAbbreviation1"
-                },
-                "distributorURL": {
-                  "typeName": "distributorURL",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "http://DistributorURL1.org"
-                },
-                "distributorLogoURL": {
-                  "typeName": "distributorLogoURL",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "http://DistributorLogoURL1.org"
-                }
-              },
-              {
-                "distributorName": {
-                  "typeName": "distributorName",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "LastDistributor2, FirstDistributor2"
-                },
-                "distributorAffiliation": {
-                  "typeName": "distributorAffiliation",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "DistributorAffiliation2"
-                },
-                "distributorAbbreviation": {
-                  "typeName": "distributorAbbreviation",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "DistributorAbbreviation2"
-                },
-                "distributorURL": {
-                  "typeName": "distributorURL",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "http://DistributorURL2.org"
-                },
-                "distributorLogoURL": {
-                  "typeName": "distributorLogoURL",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "http://DistributorLogoURL2.org"
-                }
-              }
-            ]
-          },
-          {
-            "typeName": "distributionDate",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "1004-01-01"
-          },
-          {
-            "typeName": "depositor",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "LastDepositor, FirstDepositor"
-          },
-          {
-            "typeName": "dateOfDeposit",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "1002-01-01"
-          },
-          {
-            "typeName": "timePeriodCovered",
-            "multiple": true,
-            "typeClass": "compound",
-            "value": [
-              {
-                "timePeriodCoveredStart": {
-                  "typeName": "timePeriodCoveredStart",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "1005-01-01"
-                },
-                "timePeriodCoveredEnd": {
-                  "typeName": "timePeriodCoveredEnd",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "1005-01-02"
-                }
-              },
-              {
-                "timePeriodCoveredStart": {
-                  "typeName": "timePeriodCoveredStart",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "1005-02-01"
-                },
-                "timePeriodCoveredEnd": {
-                  "typeName": "timePeriodCoveredEnd",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "1005-02-02"
-                }
-              }
-            ]
-          },
-          {
-            "typeName": "dateOfCollection",
-            "multiple": true,
-            "typeClass": "compound",
-            "value": [
-              {
-                "dateOfCollectionStart": {
-                  "typeName": "dateOfCollectionStart",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "1006-01-01"
-                },
-                "dateOfCollectionEnd": {
-                  "typeName": "dateOfCollectionEnd",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "1006-01-01"
-                }
-              },
-              {
-                "dateOfCollectionStart": {
-                  "typeName": "dateOfCollectionStart",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "1006-02-01"
-                },
-                "dateOfCollectionEnd": {
-                  "typeName": "dateOfCollectionEnd",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "1006-02-02"
-                }
-              }
-            ]
-          },
-          {
-            "typeName": "kindOfData",
-            "multiple": true,
-            "typeClass": "controlledVocabulary",
-            "value": [
-              "Dataset",
+            "typeName":"kindOfData",
+            "multiple":true,
+            "typeClass":"controlledVocabulary",
+            "value":[
+              "Audiovisual",
               "Collection"
             ]
           },
           {
-            "typeName": "series",
-            "multiple": false,
-            "typeClass": "compound",
-            "value": {
-              "seriesName": {
-                "typeName": "seriesName",
-                "multiple": false,
-                "typeClass": "primitive",
-                "value": "SeriesName"
+            "typeName":"kindOfDataOther",
+            "multiple":true,
+            "typeClass":"primitive",
+            "value":[
+              "otherKindOfData1",
+              "otherKindOfData2"
+            ]
+          },
+          {
+            "typeName":"dataOrigin",
+            "multiple":true,
+            "typeClass":"controlledVocabulary",
+            "value":[
+              "observational data",
+              "experimental data"
+            ]
+          },
+          {
+            "typeName":"dataSources",
+            "multiple":true,
+            "typeClass":"primitive",
+            "value":[
+              "dataSource1",
+              "dateSource2"
+            ]
+          },
+          {
+            "typeName":"originOfSources",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"originOfSource"
+          },
+          {
+            "typeName":"characteristicOfSources",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"characteristicOfSource"
+          },
+          {
+            "typeName":"accessToSources",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"accessToSource"
+          },
+          {
+            "typeName":"software",
+            "multiple":true,
+            "typeClass":"compound",
+            "value":[
+              {
+                "softwareName":{
+                  "typeName":"softwareName",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"softwareName1"
+                },
+                "softwareVersion":{
+                  "typeName":"softwareVersion",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"softwareVersion1"
+                }
               },
-              "seriesInformation": {
-                "typeName": "seriesInformation",
-                "multiple": false,
-                "typeClass": "primitive",
-                "value": "SeriesInformation"
+              {
+                "softwareName":{
+                  "typeName":"softwareName",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"softwareName2"
+                },
+                "softwareVersion":{
+                  "typeName":"softwareVersion",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"softwareVersion2"
+                }
+              }
+            ]
+          },
+          {
+            "typeName":"series",
+            "multiple":false,
+            "typeClass":"compound",
+            "value":{
+              "seriesName":{
+                "typeName":"seriesName",
+                "multiple":false,
+                "typeClass":"primitive",
+                "value":"seriesName"
+              },
+              "seriesInformation":{
+                "typeName":"seriesInformation",
+                "multiple":false,
+                "typeClass":"primitive",
+                "value":"seriesInformation"
               }
             }
           },
           {
-            "typeName": "software",
-            "multiple": true,
-            "typeClass": "compound",
-            "value": [
+            "typeName":"lifeCycleStep",
+            "multiple":true,
+            "typeClass":"controlledVocabulary",
+            "value":[
+              "Study proposal",
+              "Funding"
+            ]
+          },
+          {
+            "typeName":"notesText",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"notes"
+          },
+          {
+            "typeName":"publication",
+            "multiple":true,
+            "typeClass":"compound",
+            "value":[
               {
-                "softwareName": {
-                  "typeName": "softwareName",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "SoftwareName1"
+                "publicationCitation":{
+                  "typeName":"publicationCitation",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"relatedPublicationCitation1"
                 },
-                "softwareVersion": {
-                  "typeName": "softwareVersion",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "SoftwareVersion1"
+                "publicationIDType":{
+                  "typeName":"publicationIDType",
+                  "multiple":false,
+                  "typeClass":"controlledVocabulary",
+                  "value":"ark"
+                },
+                "publicationIDNumber":{
+                  "typeName":"publicationIDNumber",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"relatedPublicationIdentifier1"
+                },
+                "publicationURL":{
+                  "typeName":"publicationURL",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"http://related.publication.url1.com"
                 }
               },
               {
-                "softwareName": {
-                  "typeName": "softwareName",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "SoftwareName2"
+                "publicationCitation":{
+                  "typeName":"publicationCitation",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"relatedPublicationCitation2"
                 },
-                "softwareVersion": {
-                  "typeName": "softwareVersion",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "SoftwareVersion2"
+                "publicationIDType":{
+                  "typeName":"publicationIDType",
+                  "multiple":false,
+                  "typeClass":"controlledVocabulary",
+                  "value":"arXiv"
+                },
+                "publicationIDNumber":{
+                  "typeName":"publicationIDNumber",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"relatedPublicationIdentifier2"
+                },
+                "publicationURL":{
+                  "typeName":"publicationURL",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"http://related.publication.url2.com"
                 }
               }
             ]
           },
           {
-            "typeName": "relatedMaterial",
-            "multiple": true,
-            "typeClass": "primitive",
-            "value": [
-              "RelatedMaterial1",
-              "RelatedMaterial2"
+            "typeName":"relatedMaterial",
+            "multiple":true,
+            "typeClass":"primitive",
+            "value":[
+              "relatedMaterial1",
+              "relatedMaterial2"
             ]
           },
           {
-            "typeName": "relatedDatasets",
-            "multiple": true,
-            "typeClass": "primitive",
-            "value": [
-              "RelatedDatasets1",
-              "RelatedDatasets2"
+            "typeName":"relatedDataset",
+            "multiple":true,
+            "typeClass":"compound",
+            "value":[
+              {
+                "relatedDatasetCitation":{
+                  "typeName":"relatedDatasetCitation",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"relatedDatasetCitation1"
+                },
+                "relatedDatasetIDType":{
+                  "typeName":"relatedDatasetIDType",
+                  "multiple":false,
+                  "typeClass":"controlledVocabulary",
+                  "value":"ark"
+                },
+                "relatedDatasetIDNumber":{
+                  "typeName":"relatedDatasetIDNumber",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"relatedDatasetIdentifier1"
+                },
+                "relatedDatasetURL":{
+                  "typeName":"relatedDatasetURL",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"http://related.dataset.url1.com"
+                }
+              },
+              {
+                "relatedDatasetCitation":{
+                  "typeName":"relatedDatasetCitation",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"relatedDatasetCitation2"
+                },
+                "relatedDatasetIDType":{
+                  "typeName":"relatedDatasetIDType",
+                  "multiple":false,
+                  "typeClass":"controlledVocabulary",
+                  "value":"doi"
+                },
+                "relatedDatasetIDNumber":{
+                  "typeName":"relatedDatasetIDNumber",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"relatedDatasetIdentifier2"
+                },
+                "relatedDatasetURL":{
+                  "typeName":"relatedDatasetURL",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"http://related.dataset.url2.com"
+                }
+              }
             ]
           },
           {
-            "typeName": "otherReferences",
-            "multiple": true,
-            "typeClass": "primitive",
-            "value": [
-              "OtherReferences1",
-              "OtherReferences2"
+            "typeName":"otherReferences",
+            "multiple":true,
+            "typeClass":"primitive",
+            "value":[
+              "otherReference1",
+              "otherReference2"
             ]
           },
           {
-            "typeName": "dataSources",
-            "multiple": true,
-            "typeClass": "primitive",
-            "value": [
-              "DataSources1",
-              "DataSources2"
+            "typeName":"grantNumber",
+            "multiple":true,
+            "typeClass":"compound",
+            "value":[
+              {
+                "grantNumberAgency":{
+                  "typeName":"grantNumberAgency",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"grantAgency1"
+                },
+                "grantNumberValue":{
+                  "typeName":"grantNumberValue",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"grantNumber1"
+                }
+              },
+              {
+                "grantNumberAgency":{
+                  "typeName":"grantNumberAgency",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"grantAgency2"
+                },
+                "grantNumberValue":{
+                  "typeName":"grantNumberValue",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"grantNumber2"
+                }
+              }
             ]
           },
           {
-            "typeName": "originOfSources",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "OriginOfSources"
+            "typeName":"project",
+            "multiple":true,
+            "typeClass":"compound",
+            "value":[
+              {
+                "projectAcronym":{
+                  "typeName":"projectAcronym",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"projectAcronym"
+                },
+                "projectTitle":{
+                  "typeName":"projectTitle",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"projectTitle"
+                },
+                "projectId":{
+                  "typeName":"projectId",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"projectID"
+                },
+                "projectURL":{
+                  "typeName":"projectURL",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"http://project.url.com"
+                },
+                "projectWorkPackage":{
+                  "typeName":"projectWorkPackage",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"projectWP"
+                },
+                "projectTask":{
+                  "typeName":"projectTask",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"projectTask"
+                }
+              }
+            ]
           },
           {
-            "typeName": "characteristicOfSources",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "CharacteristicOfSourcesNoted"
+            "typeName":"timePeriodCovered",
+            "multiple":true,
+            "typeClass":"compound",
+            "value":[
+              {
+                "timePeriodCoveredStart":{
+                  "typeName":"timePeriodCoveredStart",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"2000-01-01"
+                },
+                "timePeriodCoveredEnd":{
+                  "typeName":"timePeriodCoveredEnd",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"2000-01-02"
+                }
+              },
+              {
+                "timePeriodCoveredStart":{
+                  "typeName":"timePeriodCoveredStart",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"2000-01-03"
+                },
+                "timePeriodCoveredEnd":{
+                  "typeName":"timePeriodCoveredEnd",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"2000-01-04"
+                }
+              }
+            ]
           },
           {
-            "typeName": "accessToSources",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "DocumentationAndAccessToSources"
+            "typeName":"dateOfCollection",
+            "multiple":true,
+            "typeClass":"compound",
+            "value":[
+              {
+                "dateOfCollectionStart":{
+                  "typeName":"dateOfCollectionStart",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"2000-01-01"
+                },
+                "dateOfCollectionEnd":{
+                  "typeName":"dateOfCollectionEnd",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"2000-01-02"
+                }
+              },
+              {
+                "dateOfCollectionStart":{
+                  "typeName":"dateOfCollectionStart",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"2000-01-03"
+                },
+                "dateOfCollectionEnd":{
+                  "typeName":"dateOfCollectionEnd",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"2000-01-04"
+                }
+              }
+            ]
+          },
+          {
+            "typeName":"depositor",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"depositor"
+          },
+          {
+            "typeName":"dateOfDeposit",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"2000-01-01"
           }
         ]
       },
-      "geospatial": {
-        "displayName": "Geospatial Metadata",
-        "fields": [
+      "geospatial":{
+        "displayName":"Geospatial Metadata",
+        "fields":[
           {
-            "typeName": "geographicCoverage",
-            "multiple": true,
-            "typeClass": "compound",
-            "value": [
+            "typeName":"geographicCoverage",
+            "multiple":true,
+            "typeClass":"compound",
+            "value":[
               {
-                "country": {
-                  "typeName": "country",
-                  "multiple": false,
-                  "typeClass": "controlledVocabulary",
-                  "value": "Afghanistan"
+                "country":{
+                  "typeName":"country",
+                  "multiple":false,
+                  "typeClass":"controlledVocabulary",
+                  "value":"Afghanistan"
                 },
-                "state": {
-                  "typeName": "state",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "GeographicCoverageStateProvince1"
+                "state":{
+                  "typeName":"state",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"geographicCoverageProvince1"
                 },
-                "city": {
-                  "typeName": "city",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "GeographicCoverageCity1"
+                "city":{
+                  "typeName":"city",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"geographicCoverageCity1"
                 },
-                "otherGeographicCoverage": {
-                  "typeName": "otherGeographicCoverage",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "GeographicCoverageOther1"
+                "otherGeographicCoverage":{
+                  "typeName":"otherGeographicCoverage",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"geographicCoverageOther1"
                 }
               },
               {
-                "country": {
-                  "typeName": "country",
-                  "multiple": false,
-                  "typeClass": "controlledVocabulary",
-                  "value": "Albania"
+                "country":{
+                  "typeName":"country",
+                  "multiple":false,
+                  "typeClass":"controlledVocabulary",
+                  "value":"Albania"
                 },
-                "state": {
-                  "typeName": "state",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "GeographicCoverageStateProvince2"
+                "state":{
+                  "typeName":"state",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"geographicCoverageProvince2"
                 },
-                "city": {
-                  "typeName": "city",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "GeographicCoverageCity2"
+                "city":{
+                  "typeName":"city",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"geographicCoverageCity2"
                 },
-                "otherGeographicCoverage": {
-                  "typeName": "otherGeographicCoverage",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "GeographicCoverageOther2"
+                "otherGeographicCoverage":{
+                  "typeName":"otherGeographicCoverage",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"geographicCoverageOther2"
                 }
               }
             ]
           },
           {
-            "typeName": "geographicUnit",
-            "multiple": true,
-            "typeClass": "primitive",
-            "value": [
-              "GeographicUnit1",
-              "GeographicUnit2"
+            "typeName":"geographicUnit",
+            "multiple":true,
+            "typeClass":"primitive",
+            "value":[
+              "geographicUnit1",
+              "geographicUnit2"
             ]
           },
           {
-            "typeName": "geographicBoundingBox",
-            "multiple": true,
-            "typeClass": "compound",
-            "value": [
+            "typeName":"geographicBoundingBox",
+            "multiple":true,
+            "typeClass":"compound",
+            "value":[
               {
-                "westLongitude": {
-                  "typeName": "westLongitude",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "10"
+                "westLongitude":{
+                  "typeName":"westLongitude",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"0.0"
                 },
-                "eastLongitude": {
-                  "typeName": "eastLongitude",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "20"
+                "eastLongitude":{
+                  "typeName":"eastLongitude",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"1.1"
                 },
-                "northLongitude": {
-                  "typeName": "northLongitude",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "40"
+                "northLongitude":{
+                  "typeName":"northLongitude",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"2.2"
                 },
-                "southLongitude": {
-                  "typeName": "southLongitude",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "30"
+                "southLongitude":{
+                  "typeName":"southLongitude",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"3.3"
                 }
               },
               {
-                "westLongitude": {
-                  "typeName": "westLongitude",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "50"
+                "westLongitude":{
+                  "typeName":"westLongitude",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"4.4"
                 },
-                "eastLongitude": {
-                  "typeName": "eastLongitude",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "60"
+                "eastLongitude":{
+                  "typeName":"eastLongitude",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"5.5"
                 },
-                "northLongitude": {
-                  "typeName": "northLongitude",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "80"
+                "northLongitude":{
+                  "typeName":"northLongitude",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"6.6"
                 },
-                "southLongitude": {
-                  "typeName": "southLongitude",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "70"
+                "southLongitude":{
+                  "typeName":"southLongitude",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"7.7"
+                }
+              }
+            ]
+          },
+          {
+            "typeName":"qualityValidity",
+            "multiple":true,
+            "typeClass":"compound",
+            "value":[
+              {
+                "lineage":{
+                  "typeName":"lineage",
+                  "multiple":true,
+                  "typeClass":"primitive",
+                  "value":[
+                    "QualityAndValidityLineage1"
+                  ]
+                },
+                "spatialResolution":{
+                  "typeName":"spatialResolution",
+                  "multiple":true,
+                  "typeClass":"primitive",
+                  "value":[
+                    "QualityAndValiditySpatialResolution1"
+                  ]
+                }
+              },
+              {
+                "lineage":{
+                  "typeName":"lineage",
+                  "multiple":true,
+                  "typeClass":"primitive",
+                  "value":[
+                    "QualityAndValidityLineage2"
+                  ]
+                },
+                "spatialResolution":{
+                  "typeName":"spatialResolution",
+                  "multiple":true,
+                  "typeClass":"primitive",
+                  "value":[
+                    "QualityAndValiditySpatialResolution2"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "typeName":"conformity",
+            "multiple":true,
+            "typeClass":"compound",
+            "value":[
+              {
+                "specification":{
+                  "typeName":"specification",
+                  "multiple":true,
+                  "typeClass":"primitive",
+                  "value":[
+                    "conformitySpecification1"
+                  ]
+                },
+                "degree":{
+                  "typeName":"degree",
+                  "multiple":false,
+                  "typeClass":"controlledVocabulary",
+                  "value":"Conformant"
+                }
+              },
+              {
+                "specification":{
+                  "typeName":"specification",
+                  "multiple":true,
+                  "typeClass":"primitive",
+                  "value":[
+                    "conformitySpecification2"
+                  ]
+                },
+                "degree":{
+                  "typeName":"degree",
+                  "multiple":false,
+                  "typeClass":"controlledVocabulary",
+                  "value":"Not Conformant"
                 }
               }
             ]
           }
         ]
       },
-      "socialscience": {
-        "displayName": "Social Science and Humanities Metadata",
-        "fields": [
+      "socialscience":{
+        "displayName":"Social Science and Humanities Metadata",
+        "fields":[
           {
-            "typeName": "unitOfAnalysis",
-            "multiple": true,
-            "typeClass": "primitive",
-            "value": [
-              "UnitOfAnalysis1",
-              "UnitOfAnalysis2"
+            "typeName":"unitOfAnalysis",
+            "multiple":true,
+            "typeClass":"controlledVocabulary",
+            "value":[
+              "Individual",
+              "Organization"
             ]
           },
           {
-            "typeName": "universe",
-            "multiple": true,
-            "typeClass": "primitive",
-            "value": [
-              "Universe1",
-              "Universe2"
+            "typeName":"unitOfAnalysisOther",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"otherUnitOfAnalysis"
+          },
+          {
+            "typeName":"universe",
+            "multiple":true,
+            "typeClass":"primitive",
+            "value":[
+              "universe1",
+              "universe2"
             ]
           },
           {
-            "typeName": "timeMethod",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "TimeMethod"
+            "typeName":"timeMethod",
+            "multiple":false,
+            "typeClass":"controlledVocabulary",
+            "value":"Longitudinal"
           },
           {
-            "typeName": "dataCollector",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "LastDataCollector1, FirstDataCollector1"
+            "typeName":"timeMethodOther",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"otherTimeMethod"
           },
           {
-            "typeName": "collectorTraining",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "CollectorTraining"
+            "typeName":"dataCollector",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"dataCollector"
           },
           {
-            "typeName": "frequencyOfDataCollection",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "Frequency"
+            "typeName":"collectorTraining",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"collectorTraining"
           },
           {
-            "typeName": "samplingProcedure",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "SamplingProcedure"
+            "typeName":"frequencyOfDataCollection",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"frequency"
           },
           {
-            "typeName": "targetSampleSize",
-            "multiple": false,
-            "typeClass": "compound",
-            "value": {
-              "targetSampleActualSize": {
-                "typeName": "targetSampleActualSize",
-                "multiple": false,
-                "typeClass": "primitive",
-                "value": "100"
+            "typeName":"samplingProcedure",
+            "multiple":false,
+            "typeClass":"controlledVocabulary",
+            "value":"Total universe/Complete enumeration"
+          },
+          {
+            "typeName":"samplingProcedureOther",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"otherSamplingProcedure"
+          },
+          {
+            "typeName":"targetSampleSize",
+            "multiple":false,
+            "typeClass":"compound",
+            "value":{
+              "targetSampleActualSize":{
+                "typeName":"targetSampleActualSize",
+                "multiple":false,
+                "typeClass":"primitive",
+                "value":"42"
               },
-              "targetSampleSizeFormula": {
-                "typeName": "targetSampleSizeFormula",
-                "multiple": false,
-                "typeClass": "primitive",
-                "value": "TargetSampleSizeFormula"
+              "targetSampleSizeFormula":{
+                "typeName":"targetSampleSizeFormula",
+                "multiple":false,
+                "typeClass":"primitive",
+                "value":"formula"
               }
             }
           },
           {
-            "typeName": "deviationsFromSampleDesign",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "MajorDeviationsForSampleDesign"
+            "typeName":"deviationsFromSampleDesign",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"majorDeviationForSampleDesigne"
           },
           {
-            "typeName": "collectionMode",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "CollectionMode"
+            "typeName":"collectionMode",
+            "multiple":true,
+            "typeClass":"controlledVocabulary",
+            "value":["Interview"]
           },
           {
-            "typeName": "researchInstrument",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "TypeOfResearchInstrument"
+            "typeName":"collectionModeOther",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"otherCollectionMode"
           },
           {
-            "typeName": "dataCollectionSituation",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "CharacteristicsOfDataCollectionSituation"
+            "typeName":"researchInstrument",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"typeOfResearchInstrument"
           },
           {
-            "typeName": "actionsToMinimizeLoss",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "ActionsToMinimizeLosses"
+            "typeName":"dataCollectionSituation",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"charachteristicsOfDataCollectionSituation"
           },
           {
-            "typeName": "controlOperations",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "ControlOperations"
+            "typeName":"actionsToMinimizeLoss",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"actionToMinimizeLoss"
           },
           {
-            "typeName": "weighting",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "Weighting"
+            "typeName":"controlOperations",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"controlOperations"
           },
           {
-            "typeName": "cleaningOperations",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "CleaningOperations"
+            "typeName":"weighting",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"weighting"
           },
           {
-            "typeName": "datasetLevelErrorNotes",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "StudyLevelErrorNotes"
+            "typeName":"cleaningOperations",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"cleaningOperations"
           },
           {
-            "typeName": "responseRate",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "ResponseRate"
+            "typeName":"datasetLevelErrorNotes",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"studyLevelErrorNotes"
           },
           {
-            "typeName": "samplingErrorEstimates",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "EstimatesOfSamplingError"
+            "typeName":"responseRate",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"responseRate"
           },
           {
-            "typeName": "otherDataAppraisal",
-            "multiple": false,
-            "typeClass": "primitive",
-            "value": "OtherFormsOfDataAppraisal"
+            "typeName":"samplingErrorEstimates",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"estimatesOfSamplingError"
           },
           {
-            "typeName": "socialScienceNotes",
-            "multiple": false,
-            "typeClass": "compound",
-            "value": {
-              "socialScienceNotesType": {
-                "typeName": "socialScienceNotesType",
-                "multiple": false,
-                "typeClass": "primitive",
-                "value": "NotesType"
+            "typeName":"otherDataAppraisal",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"otherFormsOfDataAppraisal"
+          },
+          {
+            "typeName":"socialScienceNotes",
+            "multiple":false,
+            "typeClass":"compound",
+            "value":{
+              "socialScienceNotesType":{
+                "typeName":"socialScienceNotesType",
+                "multiple":false,
+                "typeClass":"primitive",
+                "value":"noteType"
               },
-              "socialScienceNotesSubject": {
-                "typeName": "socialScienceNotesSubject",
-                "multiple": false,
-                "typeClass": "primitive",
-                "value": "NotesSubject"
+              "socialScienceNotesSubject":{
+                "typeName":"socialScienceNotesSubject",
+                "multiple":false,
+                "typeClass":"primitive",
+                "value":"noteSubject"
               },
-              "socialScienceNotesText": {
-                "typeName": "socialScienceNotesText",
-                "multiple": false,
-                "typeClass": "primitive",
-                "value": "NotesText"
+              "socialScienceNotesText":{
+                "typeName":"socialScienceNotesText",
+                "multiple":false,
+                "typeClass":"primitive",
+                "value":"noteText"
               }
             }
+          },
+          {
+            "typeName":"geographicalReferential",
+            "multiple":true,
+            "typeClass":"compound",
+            "value":[
+              {
+                "level":{
+                  "typeName":"level",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"geographicalReferentialLevel1"
+                },
+                "version":{
+                  "typeName":"version",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"geographicalReferentialVersion1"
+                }
+              },
+              {
+                "level":{
+                  "typeName":"level",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"geographicalReferentialLevel2"
+                },
+                "version":{
+                  "typeName":"version",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"geographicalReferentialVersion2"
+                }
+              }
+            ]
           }
         ]
       },
-      "astrophysics": {
+      "biomedical":{
+        "displayName":"Life Sciences Metadata",
+        "fields":[
+          {
+            "typeName":"studyDesignType",
+            "multiple":true,
+            "typeClass":"controlledVocabulary",
+            "value":[
+              "Case Control",
+              "Cross Sectional"
+            ]
+          },
+          {
+            "typeName":"studyDesignTypeOther",
+            "multiple":true,
+            "typeClass":"primitive",
+            "value":[
+              "otherDesignType1",
+              "otherDesignType2"
+            ]
+          },
+          {
+            "typeName":"studyFactorType",
+            "multiple":true,
+            "typeClass":"controlledVocabulary",
+            "value":[
+              "Age",
+              "Biomarkers"
+            ]
+          },
+          {
+            "typeName":"studyFactorTypeOther",
+            "multiple":true,
+            "typeClass":"primitive",
+            "value":[
+              "otherFactorType1",
+              "otherFactorType2"
+            ]
+          },
+          {
+            "typeName":"studyAssayOrganism",
+            "multiple":true,
+            "typeClass":"controlledVocabulary",
+            "value":[
+              "Arabidopsis thaliana",
+              "Bos taurus"
+            ]
+          },
+          {
+            "typeName":"studyAssayOtherOrganism",
+            "multiple":true,
+            "typeClass":"primitive",
+            "value":[
+              "otherOrganism1",
+              "otherOrganism2"
+            ]
+          },
+          {
+            "typeName":"studyAssayMeasurementType",
+            "multiple":true,
+            "typeClass":"controlledVocabulary",
+            "value":[
+              "clinical chemistry analysis",
+              "cell sorting"
+            ]
+          },
+          {
+            "typeName":"studyAssayOtherMeasurmentType",
+            "multiple":true,
+            "typeClass":"primitive",
+            "value":[
+              "otherMeasurementType1",
+              "otherMeasurementType2"
+            ]
+          },
+          {
+            "typeName":"studyAssayTechnologyType",
+            "multiple":true,
+            "typeClass":"controlledVocabulary",
+            "value":[
+              "culture based drug susceptibility testing, single concentration",
+              "culture based drug susceptibility testing, two concentrations"
+            ]
+          },
+          {
+            "typeName":"studyAssayTechnologyTypeOther",
+            "multiple":true,
+            "typeClass":"primitive",
+            "value":[
+              "otherTechnologyType1",
+              "otherTechnologyType2"
+            ]
+          },
+          {
+            "typeName":"studyAssayPlatform",
+            "multiple":true,
+            "typeClass":"controlledVocabulary",
+            "value":[
+              "210-MS GC Ion Trap (Varian)",
+              "220-MS GC Ion Trap (Varian)"
+            ]
+          },
+          {
+            "typeName":"studyAssayPlatformOther",
+            "multiple":true,
+            "typeClass":"primitive",
+            "value":[
+              "otherTechnologyPlatform1",
+              "otherTechnologyPlatform2"
+            ]
+          },
+          {
+            "typeName":"studyAssayCellType",
+            "multiple":true,
+            "typeClass":"primitive",
+            "value":[
+              "cellType1",
+              "cellType2"
+            ]
+          },
+          {
+            "typeName":"studySampleType",
+            "multiple":true,
+            "typeClass":"primitive",
+            "value":[
+              "sampleType1",
+              "sampleType2"
+            ]
+          },
+          {
+            "typeName":"studyProtocolType",
+            "multiple":true,
+            "typeClass":"primitive",
+            "value":[
+              "protocolType1",
+              "protocolType2"
+            ]
+          }
+        ]
+      },
+      "journal":{
+        "displayName":"Journal Metadata",
+        "fields":[
+          {
+            "typeName":"journalVolumeIssue",
+            "multiple":true,
+            "typeClass":"compound",
+            "value":[
+              {
+                "journalVolume":{
+                  "typeName":"journalVolume",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"journalVolume1"
+                },
+                "journalIssue":{
+                  "typeName":"journalIssue",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"journalIssue1"
+                },
+                "journalPubDate":{
+                  "typeName":"journalPubDate",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"2000-01-01"
+                }
+              },
+              {
+                "journalVolume":{
+                  "typeName":"journalVolume",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"journalVolume2"
+                },
+                "journalIssue":{
+                  "typeName":"journalIssue",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"journalIssue2"
+                },
+                "journalPubDate":{
+                  "typeName":"journalPubDate",
+                  "multiple":false,
+                  "typeClass":"primitive",
+                  "value":"2000-01-02"
+                }
+              }
+            ]
+          },
+          {
+            "typeName":"journalArticleType",
+            "multiple":false,
+            "typeClass":"controlledVocabulary",
+            "value":"abstract"
+          }
+        ]
+      },
+      "semantics":{
+        "displayName":"Semantic resource",
+        "fields":[
+          {
+            "typeName":"hasFormalityLevel",
+            "multiple":false,
+            "typeClass":"controlledVocabulary",
+            "value":"Classification scheme"
+          },
+          {
+            "typeName":"hasOntologyLanguage",
+            "multiple":true,
+            "typeClass":"controlledVocabulary",
+            "value":[
+              "JSON-LD"
+            ]
+          },
+          {
+            "typeName":"typeOfSR",
+            "multiple":false,
+            "typeClass":"controlledVocabulary",
+            "value":"Application Ontology"
+          },
+          {
+            "typeName":"designedForOntologyTask",
+            "multiple":true,
+            "typeClass":"controlledVocabulary",
+            "value":[
+              "Annotation Task",
+              "Configuration Task"
+            ]
+          },
+          {
+            "typeName":"knownUsage",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"knownUsage"
+          },
+          {
+            "typeName":"resourceVersion",
+            "multiple":false,
+            "typeClass":"compound",
+            "value":{
+              "versionStatus":{
+                "typeName":"versionStatus",
+                "multiple":true,
+                "typeClass":"controlledVocabulary",
+                "value":[
+                  "alpha",
+                  "beta"
+                ]
+              },
+              "versionInfo":{
+                "typeName":"versionInfo",
+                "multiple":false,
+                "typeClass":"primitive",
+                "value":"version"
+              },
+              "priorVersion":{
+                "typeName":"priorVersion",
+                "multiple":true,
+                "typeClass":"primitive",
+                "value":[
+                  "http://prior.version"
+                ]
+              },
+              "modificationDate":{
+                "typeName":"modificationDate",
+                "multiple":false,
+                "typeClass":"primitive",
+                "value":"2000-01-01"
+              },
+              "changes":{
+                "typeName":"changes",
+                "multiple":false,
+                "typeClass":"primitive",
+                "value":"http://semantic.version.changes.com"
+              }
+            }
+          },
+          {
+            "typeName":"imports",
+            "multiple":true,
+            "typeClass":"primitive",
+            "value":[
+              "http://semantic.imports1.com",
+              "http://semantic.imports2.com"
+            ]
+          },
+          {
+            "typeName":"bugDatabase",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"http://semantic.bug.tracker.com"
+          },
+          {
+            "typeName":"endpoint",
+            "multiple":false,
+            "typeClass":"primitive",
+            "value":"http://semantic.sparql.endpoint.com"
+          },
+          {
+            "typeName":"URI",
+            "multiple":true,
+            "typeClass":"primitive",
+            "value":[
+              "http://semantic.uri1.com",
+              "http://semantic.uri2.com"
+            ]
+          }
+        ]
+      },
+      "astrophysics":{
         "displayName": "Astronomy and Astrophysics Metadata",
         "fields": [
           {
@@ -1125,10 +1737,7 @@
             "multiple": true,
             "typeClass": "controlledVocabulary",
             "value": [
-              "Image",
-              "Mosaic",
-              "EventList",
-              "Cube"
+              "Image"
             ]
           },
           {
@@ -1146,7 +1755,7 @@
             "typeClass": "primitive",
             "value": [
               "Instrument1",
-              "Instrument2"
+              "Instrument1"
             ]
           },
           {
@@ -1154,27 +1763,27 @@
             "multiple": true,
             "typeClass": "primitive",
             "value": [
-              "Object1",
-              "Object2"
+              "AstronomicalObject1",
+              "AstronomicalObject2"
             ]
           },
           {
             "typeName": "resolution.Spatial",
             "multiple": false,
             "typeClass": "primitive",
-            "value": "SpatialResolution"
+            "value": "0"
           },
           {
             "typeName": "resolution.Spectral",
             "multiple": false,
             "typeClass": "primitive",
-            "value": "SpectralResolution"
+            "value": "SpectralResolutionRatio"
           },
           {
             "typeName": "resolution.Temporal",
             "multiple": false,
             "typeClass": "primitive",
-            "value": "TimeResolution"
+            "value": "0"
           },
           {
             "typeName": "coverage.Spectral.Bandpass",
@@ -1190,8 +1799,7 @@
             "multiple": true,
             "typeClass": "primitive",
             "value": [
-              "3001",
-              "3002"
+              "0"
             ]
           },
           {
@@ -1204,13 +1812,13 @@
                   "typeName": "coverage.Spectral.MinimumWavelength",
                   "multiple": false,
                   "typeClass": "primitive",
-                  "value": "4001"
+                  "value": "0"
                 },
                 "coverage.Spectral.MaximumWavelength": {
                   "typeName": "coverage.Spectral.MaximumWavelength",
                   "multiple": false,
                   "typeClass": "primitive",
-                  "value": "4002"
+                  "value": "1"
                 }
               },
               {
@@ -1218,13 +1826,13 @@
                   "typeName": "coverage.Spectral.MinimumWavelength",
                   "multiple": false,
                   "typeClass": "primitive",
-                  "value": "4003"
+                  "value": "2"
                 },
                 "coverage.Spectral.MaximumWavelength": {
                   "typeName": "coverage.Spectral.MaximumWavelength",
                   "multiple": false,
                   "typeClass": "primitive",
-                  "value": "4004"
+                  "value": "3"
                 }
               }
             ]
@@ -1239,27 +1847,13 @@
                   "typeName": "coverage.Temporal.StartTime",
                   "multiple": false,
                   "typeClass": "primitive",
-                  "value": "1007-01-01"
+                  "value": "2022-07-10"
                 },
                 "coverage.Temporal.StopTime": {
                   "typeName": "coverage.Temporal.StopTime",
                   "multiple": false,
                   "typeClass": "primitive",
-                  "value": "1007-01-02"
-                }
-              },
-              {
-                "coverage.Temporal.StartTime": {
-                  "typeName": "coverage.Temporal.StartTime",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "1007-02-01"
-                },
-                "coverage.Temporal.StopTime": {
-                  "typeName": "coverage.Temporal.StopTime",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "1007-02-02"
+                  "value": "2022-07-10"
                 }
               }
             ]
@@ -1269,33 +1863,32 @@
             "multiple": true,
             "typeClass": "primitive",
             "value": [
-              "SkyCoverage1",
-              "SkyCoverage2"
+              "SkyCoverage"
             ]
           },
           {
             "typeName": "coverage.Depth",
             "multiple": false,
             "typeClass": "primitive",
-            "value": "200"
+            "value": "0.0"
           },
           {
             "typeName": "coverage.ObjectDensity",
             "multiple": false,
             "typeClass": "primitive",
-            "value": "300"
+            "value": "0.0"
           },
           {
             "typeName": "coverage.ObjectCount",
             "multiple": false,
             "typeClass": "primitive",
-            "value": "400"
+            "value": "0"
           },
           {
             "typeName": "coverage.SkyFraction",
             "multiple": false,
             "typeClass": "primitive",
-            "value": "500"
+            "value": "0.0"
           },
           {
             "typeName": "coverage.Polarization",
@@ -1307,13 +1900,13 @@
             "typeName": "redshiftType",
             "multiple": false,
             "typeClass": "primitive",
-            "value": "RedshiftType"
+            "value": "Optical"
           },
           {
             "typeName": "resolution.Redshift",
             "multiple": false,
             "typeClass": "primitive",
-            "value": "600"
+            "value": "0"
           },
           {
             "typeName": "coverage.RedshiftValue",
@@ -1325,13 +1918,13 @@
                   "typeName": "coverage.Redshift.MinimumValue",
                   "multiple": false,
                   "typeClass": "primitive",
-                  "value": "701"
+                  "value": "0"
                 },
                 "coverage.Redshift.MaximumValue": {
                   "typeName": "coverage.Redshift.MaximumValue",
                   "multiple": false,
                   "typeClass": "primitive",
-                  "value": "702"
+                  "value": "1"
                 }
               },
               {
@@ -1339,172 +1932,47 @@
                   "typeName": "coverage.Redshift.MinimumValue",
                   "multiple": false,
                   "typeClass": "primitive",
-                  "value": "703"
+                  "value": "2"
                 },
                 "coverage.Redshift.MaximumValue": {
                   "typeName": "coverage.Redshift.MaximumValue",
                   "multiple": false,
                   "typeClass": "primitive",
-                  "value": "704"
+                  "value": "3"
                 }
               }
             ]
           }
         ]
       },
-      "biomedical": {
-        "displayName": "Life Sciences Metadata",
+      "computationalworkflow": {
+        "displayName": "Computational Workflow Metadata",
+        "name": "computationalworkflow",
         "fields": [
           {
-            "typeName": "studyDesignType",
+            "typeName": "workflowType",
             "multiple": true,
             "typeClass": "controlledVocabulary",
             "value": [
-              "Case Control",
-              "Cross Sectional",
-              "Cohort Study",
-              "Not Specified"
+              "Common Workflow Language (CWL)",
+              "Workflow Description Language (WDL)"
             ]
           },
           {
-            "typeName": "studyFactorType",
-            "multiple": true,
-            "typeClass": "controlledVocabulary",
-            "value": [
-              "Age",
-              "Biomarkers",
-              "Cell Surface Markers",
-              "Developmental Stage"
-            ]
-          },
-          {
-            "typeName": "studyAssayOrganism",
-            "multiple": true,
-            "typeClass": "controlledVocabulary",
-            "value": [
-              "Arabidopsis thaliana",
-              "Bos taurus",
-              "Caenorhabditis elegans",
-              "Danio rerio (zebrafish)"
-            ]
-          },
-          {
-            "typeName": "studyAssayOtherOrganism",
+            "typeName": "workflowCodeRepository",
             "multiple": true,
             "typeClass": "primitive",
             "value": [
-              "OtherOrganism1",
-              "OtherOrganism2"
+              "https://code.repository.com"
             ]
           },
           {
-            "typeName": "studyAssayMeasurementType",
-            "multiple": true,
-            "typeClass": "controlledVocabulary",
-            "value": [
-              "cell counting",
-              "cell sorting",
-              "clinical chemistry analysis",
-              "DNA methylation profiling"
-            ]
-          },
-          {
-            "typeName": "studyAssayOtherMeasurmentType",
+            "typeName": "workflowDocumentation",
             "multiple": true,
             "typeClass": "primitive",
             "value": [
-              "OtherMeasurementType1",
-              "OtherMeasurementType2"
+              "Documentation"
             ]
-          },
-          {
-            "typeName": "studyAssayTechnologyType",
-            "multiple": true,
-            "typeClass": "controlledVocabulary",
-            "value": [
-              "culture based drug susceptibility testing, single concentration",
-              "culture based drug susceptibility testing, two concentrations",
-              "culture based drug susceptibility testing, three or more concentrations (minimium inhibitory concentration measurement)",
-              "flow cytometry"
-            ]
-          },
-          {
-            "typeName": "studyAssayPlatform",
-            "multiple": true,
-            "typeClass": "controlledVocabulary",
-            "value": [
-              "210-MS GC Ion Trap (Varian)",
-              "220-MS GC Ion Trap (Varian)",
-              "225-MS GC Ion Trap (Varian)",
-              "300-MS quadrupole GC/MS (Varian)"
-            ]
-          },
-          {
-            "typeName": "studyAssayCellType",
-            "multiple": true,
-            "typeClass": "primitive",
-            "value": [
-              "CellType1",
-              "CellType2"
-            ]
-          }
-        ]
-      },
-      "journal": {
-        "displayName": "Journal Metadata",
-        "fields": [
-          {
-            "typeName": "journalVolumeIssue",
-            "multiple": true,
-            "typeClass": "compound",
-            "value": [
-              {
-                "journalVolume": {
-                  "typeName": "journalVolume",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "JournalVolume1"
-                },
-                "journalIssue": {
-                  "typeName": "journalIssue",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "JournalIssue1"
-                },
-                "journalPubDate": {
-                  "typeName": "journalPubDate",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "1008-01-01"
-                }
-              },
-              {
-                "journalVolume": {
-                  "typeName": "journalVolume",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "JournalVolume2"
-                },
-                "journalIssue": {
-                  "typeName": "journalIssue",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "JournalIssue2"
-                },
-                "journalPubDate": {
-                  "typeName": "journalPubDate",
-                  "multiple": false,
-                  "typeClass": "primitive",
-                  "value": "1008-02-01"
-                }
-              }
-            ]
-          },
-          {
-            "typeName": "journalArticleType",
-            "multiple": false,
-            "typeClass": "controlledVocabulary",
-            "value": "abstract"
           }
         ]
       }

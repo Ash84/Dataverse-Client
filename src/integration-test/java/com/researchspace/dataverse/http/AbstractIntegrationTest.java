@@ -33,6 +33,7 @@ import com.researchspace.dataverse.api.v1.DataverseConfig;
 import com.researchspace.dataverse.api.v1.DataverseOperations;
 import com.researchspace.dataverse.api.v1.MetadataOperations;
 import com.researchspace.dataverse.api.v1.SearchOperations;
+import com.researchspace.dataverse.api.v1.UsersOperations;
 import com.researchspace.dataverse.spring.config.DataverseSpringConfig;
 
 /**
@@ -45,6 +46,7 @@ public class AbstractIntegrationTest extends AbstractJUnit4SpringContextTests {
     DatasetOperations datasetOps;
     DataverseOperations dataverseOps;
     MetadataOperations metadataOPs;
+    UsersOperations usersOps;
     SearchOperations searchOps;
     @Autowired
     DataverseAPI dataverseAPI;
@@ -69,6 +71,7 @@ public class AbstractIntegrationTest extends AbstractJUnit4SpringContextTests {
         final DataverseConfig cfg = new DataverseConfig(uri, apiKey, dataverseAlias);
         dataverseAPI.configure(cfg);
         datasetOps = dataverseAPI.getDatasetOperations();
+        usersOps = dataverseAPI.getUsersOperations();
         dataverseOps = dataverseAPI.getDataverseOperations();
         metadataOPs = dataverseAPI.getMetadataOperations();
         searchOps = dataverseAPI.getSearchOperations();

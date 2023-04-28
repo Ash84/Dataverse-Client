@@ -31,6 +31,7 @@ Copyright 2016 ResearchSpace
 @AllArgsConstructor()
 @NoArgsConstructor()
 public class Dataset {
+    private String metadataLanguage;
     private DatasetVersion datasetVersion;
     private DatasetVersion latestVersion;
     private Long id;

@@ -43,12 +43,12 @@ public class DataverseOperationsTest extends AbstractIntegrationTest {
     /**
      * Not permitted error.
      */
-    private static final String UNAUTHORIZED = "is not permitted to perform requested action";
+    private static final String NOT_FOUND_MESSAGE = "Can't find dataverse with identifier=";
 
     /**
      * Not permitted error code.
      */
-    private static final Integer UNAUTHORIZED_CODE = 401;
+    private static final Integer NOT_FOUND = 404;
 
     /**
      * Not published error.
@@ -106,9 +106,9 @@ public class DataverseOperationsTest extends AbstractIntegrationTest {
             dataverseOps.deleteDataverse("ra");
         } catch (final RestClientException e) {
             exception = e;
-            assertEquals(UNAUTHORIZED_CODE, e.getCode());
-            assertTrue("[" + e.getLocalizedMessage() + "] should contain [" + UNAUTHORIZED + "]",
-                    e.getLocalizedMessage().contains(UNAUTHORIZED));
+            assertEquals(NOT_FOUND, e.getCode());
+            assertTrue("[" + e.getLocalizedMessage() + "] should contain [" + NOT_FOUND_MESSAGE + "]",
+                    e.getLocalizedMessage().contains(NOT_FOUND_MESSAGE));
         }
         assertNotNull(exception);
     }
