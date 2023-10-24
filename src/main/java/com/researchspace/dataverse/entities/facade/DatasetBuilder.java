@@ -237,7 +237,9 @@ public class DatasetBuilder {
             final Map<String, Object> map = new HashMap<>();
             addOptionalPrimitiveField(topic.getTopicClassValue(), map, TOPIC_VALUE);
             addOptionalPrimitiveField(topic.getTopicClassVocab(), map, TOPIC_VOCABULARY);
-            addOptionalPrimitiveField(topic.getTopicClassVocabURI().toString(), map, TOPIC_VOCABULARY_URI);
+            if (topic.getTopicClassVocabURI() != null) {
+                addOptionalPrimitiveField(topic.getTopicClassVocabURI().toString(), map, TOPIC_VOCABULARY_URI);
+            }
             topicsList.add(map);
         }
         final Field topicClassifn = createCompoundField("topicClassification", true, topicsList);
@@ -245,18 +247,22 @@ public class DatasetBuilder {
     }
 
     private void addProducers(final DatasetFacade facade, final List<Field> fields) {
-        final List<DatasetProducer> topics = facade.getProducers();
-        final List<Map<String, Object>> topicsList = new ArrayList<>();
-        for (final DatasetProducer topic: topics) {
+        final List<DatasetProducer> producers = facade.getProducers();
+        final List<Map<String, Object>> producerList = new ArrayList<>();
+        for (final DatasetProducer producer: producers) {
             final Map<String, Object> map = new HashMap<>();
-            addOptionalPrimitiveField(topic.getName(), map, PRODUCER_NAME);
-            addOptionalPrimitiveField(topic.getAbbreviation(), map, PRODUCER_ABBREVIATION);
-            addOptionalPrimitiveField(topic.getAffiliation(), map, PRODUCER_AFFILIATION);
-            addOptionalPrimitiveField(topic.getUrl().toString(), map, PRODUCER_URL);
-            addOptionalPrimitiveField(topic.getLogoURL().toString(), map, PRODUCER_LOGO_URL);
-            topicsList.add(map);
+            addOptionalPrimitiveField(producer.getName(), map, PRODUCER_NAME);
+            addOptionalPrimitiveField(producer.getAbbreviation(), map, PRODUCER_ABBREVIATION);
+            addOptionalPrimitiveField(producer.getAffiliation(), map, PRODUCER_AFFILIATION);
+            if (producer.getUrl() != null) {
+                addOptionalPrimitiveField(producer.getUrl().toString(), map, PRODUCER_URL);
+            }
+            if (producer.getLogoURL() != null) {
+                addOptionalPrimitiveField(producer.getLogoURL().toString(), map, PRODUCER_LOGO_URL);
+            }
+            producerList.add(map);
         }
-        final Field topicClassifn = createCompoundField("producer", true, topicsList);
+        final Field topicClassifn = createCompoundField("producer", true, producerList);
         fields.add(topicClassifn);
     }
 
@@ -284,7 +290,9 @@ public class DatasetBuilder {
             final Map<String, Object> map = new HashMap<>();
             addOptionalPrimitiveField(publication.getPublicationCitation(), map, PUBLICATION_CITATION);
             addOptionalPrimitiveField(publication.getPublicationIdNumber(), map, PUBLICATION_ID);
-            addOptionalPrimitiveField(publication.getPublicationURL().toString(), map, PUBLICATION_URL);
+            if (publication.getPublicationURL() != null) {
+                addOptionalPrimitiveField(publication.getPublicationURL().toString(), map, PUBLICATION_URL);
+            }
             if (publication.getPublicationIDType()!= null) {
                 final Field scheme = createControlledVocabField(PUBLICATION_ID_TYPE, false,
                         asList(publication.getPublicationIDType().name()));
@@ -304,7 +312,9 @@ public class DatasetBuilder {
             final Field descF = createPrimitiveSingleField(KEYWORD_VALUE, keyword.getValue());
             map2.put(KEYWORD_VALUE, descF);
             addOptionalPrimitiveField(keyword.getVocabulary(), map2, KEYWORD_VOCABULARY);
-            addOptionalPrimitiveField(keyword.getVocabularyURI().toString(), map2, KEYWORD_VOCABULARY_URI);
+            if (keyword.getVocabularyURI() != null) {
+                addOptionalPrimitiveField(keyword.getVocabularyURI().toString(), map2, KEYWORD_VOCABULARY_URI);
+            }
             keysList.add(map2);
         }
 
@@ -368,7 +378,7 @@ public class DatasetBuilder {
         fields.add(toAdd);
     }
 
-    private void addGeographicBoundingBox (final DatasetFacade facade, final List<Field> fields) {
+    private void addGeographicBoundingBox (final DatasetFacade facade, final List<Field> fields) throws NullPointerException {
         final List<DatasetGeographicBoundingBox> geographicBoundingBoxes = facade.getGeographicBoundingBoxes();
         if (geographicBoundingBoxes != null && !geographicBoundingBoxes.isEmpty()) {
             final List<Map<String, Object>> geographicBoundariesMap = new ArrayList<>();

@@ -122,7 +122,7 @@ public interface DatasetOperations {
      * @param fileName The name of the file to be created on Dataverse
      * @return DatasetFileList information about the uploaded file.
      */
-    DatasetFileList uploadNativeFile( byte[] data, FileUploadMetadata metadata, Identifier dsIdentifier, String fileName);
+    DatasetFileList uploadNativeFile(byte[] data, FileUploadMetadata metadata, Identifier dsIdentifier, String fileName);
 
     /**
      * Upload a file to a dataset using Dataverse's native API (not Sword).
