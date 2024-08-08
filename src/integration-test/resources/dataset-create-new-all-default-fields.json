@@ -322,7 +322,7 @@
             "typeName":"productionPlace",
             "multiple":true,
             "typeClass":"primitive",
-            "value":"productionPlace"
+            "value":["productionPlace"]
           },
           {
             "typeName":"distributor",
@@ -647,7 +647,8 @@
             "typeName":"series",
             "multiple":true,
             "typeClass":"compound",
-            "value":{
+            "value":
+            [{
               "seriesName":{
                 "typeName":"seriesName",
                 "multiple":false,
@@ -660,7 +661,7 @@
                 "typeClass":"primitive",
                 "value":"seriesInformation"
               }
-            }
+            }]
           },
           {
             "typeName":"lifeCycleStep",
@@ -865,12 +866,6 @@
                   "multiple":false,
                   "typeClass":"primitive",
                   "value":"projectTitle"
-                },
-                "projectId":{
-                  "typeName":"projectId",
-                  "multiple":false,
-                  "typeClass":"primitive",
-                  "value":"projectID"
                 },
                 "projectURL":{
                   "typeName":"projectURL",

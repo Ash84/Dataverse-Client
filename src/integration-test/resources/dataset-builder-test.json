@@ -244,7 +244,7 @@
           "typeName" : "productionPlace",
           "typeClass" : "primitive",
           "multiple" : true,
-          "value" : "Edinburgh, UK"
+          "value" : [ "Edinburgh, UK" ]
         }, {
           "typeName" : "contributor",
           "typeClass" : "compound",
