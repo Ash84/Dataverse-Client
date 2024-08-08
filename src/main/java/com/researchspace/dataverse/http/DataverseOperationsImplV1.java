@@ -138,7 +138,7 @@ DataverseOperations, UsersOperations {
     public Identifier createDataset(final DatasetFacade facade, final String dataverseAlias) throws RestClientException {
         final String url = createV1Url("dataverses", dataverseAlias, "datasets");
         final String json = getJsonFromFacade(facade);
-        log.debug(json);
+        log.info(json);
         final HttpEntity<String> entity = createHttpEntity(json);
         final ParameterizedTypeReference<DataverseResponse<Identifier>> type =
                 new ParameterizedTypeReference<DataverseResponse<Identifier>>() {
@@ -466,7 +466,7 @@ DataverseOperations, UsersOperations {
     }
 
     @Override
-    public DatasetFileList uploadNativeFile( final byte[] data, final FileUploadMetadata metadata, final Identifier dsIdentifier,  final String fileName){
+    public DatasetFileList uploadNativeFile( final byte[] data, final FileUploadMetadata metadata, final Identifier dsIdentifier,  final String fileName) throws RestClientException {
         final ByteArrayResource resource = new ByteArrayResource(data){
             @Override
             public String getFilename(){
@@ -475,8 +475,9 @@ DataverseOperations, UsersOperations {
         };
         return getDatasetFileList(metadata, dsIdentifier, resource);
     }
+
     @Override
-    public DatasetFileList uploadNativeFile(final InputStream data, final long contentLength, final FileUploadMetadata metadata, final Identifier dsIdentifier,  final String fileName) {
+    public DatasetFileList uploadNativeFile(final InputStream data, final long contentLength, final FileUploadMetadata metadata, final Identifier dsIdentifier,  final String fileName) throws RestClientException  {
         final InputStreamResource resource = new InputStreamResource(data) {
             @Override
             public String getFilename(){
@@ -492,7 +493,7 @@ DataverseOperations, UsersOperations {
 
     }
 
-    private DatasetFileList getDatasetFileList(final FileUploadMetadata metadata, final Identifier dsIdentifier, final AbstractResource resource) {
+    private DatasetFileList getDatasetFileList(final FileUploadMetadata metadata, final Identifier dsIdentifier, final AbstractResource resource) throws RestClientException {
         final String url = createV1Url("datasets", ":persistentId", "add") + "?persistentId=" + dsIdentifier.getPersistentId();
         final ParameterizedTypeReference<DataverseResponse<DatasetFileList>> type =
                 new ParameterizedTypeReference<DataverseResponse<DatasetFileList>>() {};
