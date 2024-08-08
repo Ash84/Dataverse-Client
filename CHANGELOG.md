@@ -1,9 +1,15 @@
 Significant changes since 0.1.0
 
-1.1.0 In progress
+1.0.2 2024-08-08
 
-- feature: Support upload of files to a dataset using native API. #16
-- feature: After creating a Dataset, the persistent ID is stored in the Identifier object. #22
+New adaptations to ERDG, some fields properties have been updated.
+
+1.0.1 2023-01-04
+
+Adaptations to ERDG
+
+ - feature: All external requests should now throw RestClientException on failure with a reason
+ - feature: Added UsersOperations to handle token expiration date.
 
 1.0.0 2022-11-21
 

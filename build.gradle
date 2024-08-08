@@ -3,7 +3,7 @@ apply plugin: 'maven-publish'
 
 group = 'com.researchspace'
 sourceCompatibility = 1.8
-version = '1.0.1'
+version = '1.0.2'
 def springVersion='5.3.24'
 def jacksonVersion='2.11.1'
 def lombokVersion='1.18.24'
@@ -32,7 +32,7 @@ publishing {
         mavenJava(MavenPublication) {
 	        groupId 'com.researchspace'
 	        artifactId 'dataverse-client-java'
-	        version '1.0.1'
+	        version '1.0.2'
 	        
             from components.java
         }
