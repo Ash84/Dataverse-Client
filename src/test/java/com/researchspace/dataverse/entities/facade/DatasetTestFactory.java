@@ -48,7 +48,7 @@ public class DatasetTestFactory {
                 .publication(buildAPublication())
                 .producer(buildAProducer())
                 .productionDate(SOME_DATE)
-                .productionPlace("Edinburgh, UK")
+                .productionPlace(Arrays.asList("Edinburgh, UK"))
                 .contributor(buildAContributor("Fred")).contributor(buildAContributor("Tim"))
                 .subject("Chemistry")
                 .depositor("A depositor")

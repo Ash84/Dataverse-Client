@@ -154,9 +154,9 @@ public class DatasetBuilder {
     }
 
     private void addProductionPlace(final DatasetFacade facade, final List<Field> fields) {
-        if(!isEmpty(facade.getProductionPlace())){
-            final Field prodPlace = createPrimitiveSingleField("productionPlace",
-                    facade.getProductionPlace());
+        if(!facade.getProductionPlace().isEmpty()){
+            final Field prodPlace = createPrimitiveMultipleField("productionPlace",
+                    facade.getProductionPlace().toArray(new String[0]));
             fields.add(prodPlace);
         }
     }

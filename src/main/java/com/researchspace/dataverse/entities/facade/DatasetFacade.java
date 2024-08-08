@@ -57,7 +57,7 @@ public class DatasetFacade   {
     private String note;
     private List<String> languages;
     private Date productionDate;
-    private String productionPlace;
+    private List<String> productionPlace;
     private @Singular List<DatasetContributor> contributors;
     private @Singular("kindOfData") List<DatasetKindOfData> kindsOfData;
     private @Singular("timePeriodCovered") List<DatasetTimePeriodCovered> timePeriodsCovered;
