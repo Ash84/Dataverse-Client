@@ -1,7 +1,8 @@
 # Dataverse API bindings project
 
-This project is a Java wrapper around the [Dataverse  API](http://guides.dataverse.org/en/4.2/api/).  
-It was initially contributed by [ResearchSpace](www.researchspace.com) in October 2016.
+This project is a Java wrapper around the [Entrepôt Recherche Data Gouv API](https://guides.dataverse.org/en/latest/api/) (anciennement Data INRAE's API).
+It was initially contributed by [ResearchSpace](www.researchspace.com) in October 2016, and the [main branch](https://github.com/IQSS/dataverse-client-java) is maintained by Richard Adams([otter606](https://github.com/otter606), [richarda23](https://github.com/richarda23)).
+Later contributions around support of [Entrepôt Recherche Data Gouv](https://entrepot.recherche.data.gouv.fr/) (anciennement Data INRAE) from L. Tromel, Agroclim, INRAE.
 
 ## Building 
 
@@ -29,8 +30,10 @@ which will compile, run unit tests (but not integration tests) and build a jar f
 Integration tests require a connection to a Dataverse instance.
 In order to connect to a Dataverse for running tests, the following configuration is set up in `test.properties`.
 
-    dataverseServerURL=https://demo.dataverse.org
-    dataverseAlias=otter606
+	dataverseServerURL=https://demo.recherche.data.gouv.fr/
+	dataverseAlias=<any collection with which the token's associated account has necessary rights>
+	
+We recommend you to create a collection with the token's associated account, so the client will have full right on it. 
     
 As a minimum, you'll need to specify an API key on the command line to run the tests:
 
@@ -42,25 +45,14 @@ You can also override the Dataverse server URL and Id with your own settings by 
     
 ### Installing into a Maven repository
 
-This project can be added as a Gradle or Maven dependency in your project using [JitPack](https://jitpack.io).
+Install the .jar to your .m2, then add to your pom.xml:
 
-If using Maven, add this to your pom.xml file (thanks AleixMT).
-
-```
-<repositories>
-  <repository>
-    <id>jitpack.io</id>
-    <url>https://jitpack.io</url>
-  </repository>
-</repositories>
-
-<dependencies>
-  <dependency>
-    <groupId>com.github.IQSS</groupId>
-    <artifactId>dataverse-client-java</artifactId>
-    <version>master-SNAPSHOT</version>
-  </dependency>
-</dependencies>`
+```xml
+	<dependency>
+	    <groupId>com.researchspace</groupId>
+	    <artifactId>dataverse-client-java</artifactId>
+	    <version>1.0.1</version>
+	</dependency>
 ```
 
 Or, you can run:
@@ -68,6 +60,18 @@ Or, you can run:
     ./gradlew clean install
     
 to install into a local repository and generate a pom.xml file for calculating dependencies.
+
+### Publishing to a distant archiva repo with current configuration
+
+Set up the following variables: 
+`$archiva-user`: the archiva server authorized user
+`$archiva-pass`: the archiva server user's pass
+`$internal`: `<archiva-url>/archiva/repository/internal/`
+`$snapshots`: `<archiva-url>/archiva/repository/snapshots/`
+
+Then run
+`gradlew publishToMavenLocal --refresh-dependencies -ParchivaUser=$archiva-user -ParchivaPassword=$archiva-pass -ParchivaInternal=$internal -ParchivaSnapshots=$snapshots --stacktrace`
+
     
 ## Usage
 
@@ -103,13 +107,6 @@ Searching uses a builder pattern to build a search query:
 
 There is no explicit synchronisation performed in this library. The Dataverse configuration is stored in the 
 internal state of  implementation classes, so new instances of `DataverseAPIImpl` should be used for each request if running in a multi-threaded environment connecting to different Dataverses.
-    
-## Github actions
-
-Tests and integration tests run on:
-- pull request
-- merge to master, 
--  once a month, to detect regressions in API calls to https://demo.dataverse.org.
 
 ## Developing
 
