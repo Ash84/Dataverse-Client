@@ -1,8 +1,8 @@
 # Dataverse API bindings project
 
-This project is a Java wrapper around the [Entrepôt Recherche Data Gouv API](https://guides.dataverse.org/en/latest/api/) (anciennement Data INRAE's API).
+This project is a Java wrapper around the [Entrepôt Recherche Data Gouv API](https://guides.dataverse.org/en/latest/api/) (formerly Data INRAE's API).
 It was initially contributed by [ResearchSpace](www.researchspace.com) in October 2016, and the [main branch](https://github.com/IQSS/dataverse-client-java) is maintained by Richard Adams([otter606](https://github.com/otter606), [richarda23](https://github.com/richarda23)).
-Later contributions around support of [Entrepôt Recherche Data Gouv](https://entrepot.recherche.data.gouv.fr/) (anciennement Data INRAE) from L. Tromel, Agroclim, INRAE.
+Later contributions around support of [Entrepôt Recherche Data Gouv](https://entrepot.recherche.data.gouv.fr/) (formerly Data INRAE) from L. Tromel, Agroclim, INRAE.
 
 ## Building 
 
