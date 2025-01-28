@@ -90,6 +90,9 @@ public class DatasetBuilder {
         } else {
             dataset = build(metadataBlocks);
         }
+        if (facade.getLicense() != null) {
+            dataset.getDatasetVersion().setLicense(facade.getLicense());
+        }
         if (facade.getMetadataLanguage() == null) {
             dataset.setMetadataLanguage(MetadataLanguage.ENGLISH.getTag());
         } else {

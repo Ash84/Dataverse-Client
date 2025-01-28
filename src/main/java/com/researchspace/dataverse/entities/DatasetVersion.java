@@ -29,6 +29,7 @@ public class DatasetVersion {
     private String versionState;
     private String productionDate;
     private String termsOfUse;
+    private DatasetLicense license;
     private Date lastUpdateTime;
     private Date createTime;
     private Map<String, DatasetMetadataBlock> metadataBlocks;
