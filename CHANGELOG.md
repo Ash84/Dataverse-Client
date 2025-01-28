@@ -1,5 +1,11 @@
 Significant changes since 0.1.0
 
+1.0.3 2025-01-28
+
+New adaptations to ERDG:
+
+- feat: add license property in DatasetVersion
+
 1.0.2 2024-08-08
 
 New adaptations to ERDG, some fields properties have been updated.

@@ -19,6 +19,7 @@ import java.net.URL;
 import java.util.Date;
 import java.util.List;
 
+import com.researchspace.dataverse.entities.DatasetLicense;
 import com.researchspace.dataverse.entities.MetadataLanguage;
 
 import lombok.AllArgsConstructor;
@@ -34,13 +35,14 @@ import lombok.Singular;
 @Data
 @Builder
 @AllArgsConstructor
-public class DatasetFacade   {
+public class DatasetFacade {
 
     // Metadata language
     private MetadataLanguage metadataLanguage;
 
     // License
     private String termsOfUse;
+    private DatasetLicense license;
 
     // Citation metadata
     private @NonNull String title;

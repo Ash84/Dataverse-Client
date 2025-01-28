@@ -19,7 +19,21 @@ The Sword client library is included in this project as a jar file, as it is not
 
 ### Gradle 
 
-This project is built using Gradle. You can build straight away without needing to install anything:
+This project is built using Gradle.
+
+You must setup the following properties in `gradle.properties` with theses keys:
+
+```
+# the authorized user on archiva server
+archivaUser=XXXX
+# the user's password
+archivaPassword=XXXX
+# archiva URLs
+archivaInternal=http://archiva:9090/archiva/repository/internal/
+ParchivaSnapshots=http://archiva:9090/archiva/repository/snapshots/
+```
+
+You can build straight away without needing to install anything:
 
     ./gradlew clean build -x integrationTest
    
@@ -41,17 +55,23 @@ As a minimum, you'll need to specify an API key on the command line to run the t
 
 You can also override the Dataverse server URL and Id with your own settings by setting them on the command line:
 
-    ./gradlew clean integrationTest  -DdataverseServerURL=https://my.dataverse.org -DdataverseApiKey=xxx-xxx-xxx -DdataverseAlias=MY-DEMO-DATAVERSE
-    
+    ./gradlew clean integrationTest -DdataverseServerURL=https://my.dataverse.org -DdataverseApiKey=xxx-xxx-xxx -DdataverseAlias=MY-DEMO-DATAVERSE
+
+Make sure that almost one dataset is in the Dataverse.
+
 ### Installing into a Maven repository
 
-Install the .jar to your .m2, then add to your pom.xml:
+Install the .jar into your .m2 directory:
+
+`gradlew publishToMavenLocal --refresh-dependencies`
+
+then add to your pom.xml:
 
 ```xml
 	<dependency>
 	    <groupId>com.researchspace</groupId>
 	    <artifactId>dataverse-client-java</artifactId>
-	    <version>1.0.1</version>
+	    <version>1.0.3</version>
 	</dependency>
 ```
 
@@ -63,16 +83,9 @@ to install into a local repository and generate a pom.xml file for calculating d
 
 ### Publishing to a distant archiva repo with current configuration
 
-Set up the following variables: 
-`$archiva-user`: the archiva server authorized user
-`$archiva-pass`: the archiva server user's pass
-`$internal`: `<archiva-url>/archiva/repository/internal/`
-`$snapshots`: `<archiva-url>/archiva/repository/snapshots/`
-
 Then run
-`gradlew publishToMavenLocal --refresh-dependencies -ParchivaUser=$archiva-user -ParchivaPassword=$archiva-pass -ParchivaInternal=$internal -ParchivaSnapshots=$snapshots --stacktrace`
+`gradlew publish --refresh-dependencies`
 
-    
 ## Usage
 
 The best way to explore the bindings currently is by examining integration tests, especially those extending from `AbstractIntegrationTest`.
